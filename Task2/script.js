@@ -103,19 +103,5 @@
 
 
 
-function convertTemperature() {
-    var temperature = parseFloat(document.getElementById("temperature").value);
-    var conversionType = document.getElementById("conversionType").value;
-    var resultElement = document.getElementById("result");
-  
-    if (conversionType === "celsiusToFahrenheit") {
-      var fahrenheit = (temperature * 9/5) + 32;
-      resultElement.innerText = temperature + " degrees Celsius is equal to " + fahrenheit + " degrees Fahrenheit.";
-    } else if (conversionType === "fahrenheitToCelsius") {
-      var celsius = (temperature - 32) * 5/9;
-      resultElement.innerText = temperature + " degrees Fahrenheit is equal to " + celsius + " degrees Celsius.";
-    } else {
-      resultElement.innerText = "Invalid conversion type selected.";
-    }
-  }
+
   
